@@ -1,0 +1,4 @@
+import json
+from collections import namedtuple
+maping Json
+json_value=json.loads(request.DATA['full_post'], object_hook=lambda d: namedtuple('X', d.keys())(*d.values()))
